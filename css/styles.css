@@ -51,7 +51,6 @@ a{
 /***Header Section Starts***/
 .header{
     width: 100vw;
-    height: 90vh;
     padding: 5rem 0;
     display: flex;
     justify-content: center;
