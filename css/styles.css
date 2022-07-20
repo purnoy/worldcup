@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-transform: capitalize;
+    transition: .3s linear;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /*display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;*/
+}
+/***Common CSS Starts***/
+a{
+    text-decoration: none;
+    color: #333;
+}
+.btn{
+    color: #fff;
+    font-size: 1.8rem;
+    background-color: red;
+    padding: .8rem 6rem;
+    border-radius: 5px;
+    display: inline-block;
+    animation: fadeIn 1.5s;
+}
+.btn:hover{
+    transform: scale(.9);
+}
+/*** Common CSS Ends***/
+
+
+/***********************************************
+***********Index Page CSS Starts****************
+************************************************/
+
+
+/***Header Section Starts***/
+.header{
+    width: 100vw;
+    height: 90vh;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+.header .container{
+    width: 90%;
+    background: radial-gradient(rgb(255, 255, 255), rgb(241, 188, 28)) ;
+    padding: 0 5rem;
+    border-radius: 20px;
+}
+.header .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.header .container .row .col-1{
+    width: 50%;
+    padding: 15rem 0;
+    animation: transitionLeft 1s linear;
+}
+.header .container .row .col-1 h1{
+    color: #333;
+    font-size: 7rem;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.header .container .row .col-1 p{
+     color: #666;
+     font-size: 1.8rem;
+     letter-spacing: 1px;
+     margin-bottom: 20px;
+}
+.btn-watch{
+}
+.header .container .row .col-2{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    animation: transitionRight 1s linear;
+}
+.header .container .row .col-2 .image{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header .container .row .col-2 img{
+   
+    height:50rem;
+    object-fit: cover;
+}
+/***Header Section Ends***/
+
+
+/***Blog Section Starts***/
+.main{
+    width:100vw;
+    padding: 5rem 0;
+}
+section{
+    width:100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.blog .container{
+    width: 90%;
+    padding: 5rem 0;
+}
+.blog .container .row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.blog .container .row .col-1{
+    width: 25%;
+    animation: fadeIn 1s linear;
+}
+.blog .container .row .col-1 nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(103, 93, 108);
+    border-radius: 10px;
+    
+}
+.blog .container .row .col-1 nav .nav-box{
+    margin: 1rem 0;
+    color: #333;
+    font-size: 1.8rem;
+    background-color: #ededed;
+    padding: 1.4rem 3rem;
+    width: 90%;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+.blog .container .row .col-1 nav .nav-box:hover{
+    color: #fff;
+}
+.blog .container .row .col-1 nav .nav-box::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    top: 0;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;z-index: -1;
+}
+.active{
+    margin: 1rem 0;
+    color: #fff;
+    font-size: 1.8rem;
+    background-color: red;
+    padding: 1.4rem 3rem;
+    width: 90%;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+}
+.blog .container .row .col-1 nav .nav-box:hover::before{
+    width: 100%;
+    z-index: -1;
+}
+.blog .container .row .col-2{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:20px;
+    padding-left: 20px;
+}
+.blog .container .row .col-2 .blog-box{
+    
+    animation: transitionTop 1s linear;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+.blog .container .row .col-2 .blog-box .blog-img{
+    overflow: hidden;
+}
+.blog .container .row .col-2 .blog-box .blog-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.blog .container .row .col-2 .blog-box .blog-content{
+    margin:  20px;
+}
+.btn-transfer{
+    border: 1px solid #666;
+    font-size: 1.4rem;
+    color: #333;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.btn-transfer:hover{
+    background-color: rgb(6, 149, 32);
+    color: #fff;
+}
+.blog .blog-engagement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+.blog .blog-engagement a{
+    width: 50%;
+    font-size: 1.6rem;
+    padding: 1px 3px;
+    width: 30%;
+    text-align: center;
+    border-radius: 50px;
+    transition: .2s;
+}
+.blog .blog-engagement a:hover{
+    background-color: rgb(255, 87, 87);
+    color: #fff;
+}.blog .blog-engagement a:hover i{
+    color: #fff;
+    transition: .2s;
+}
+.blog .blog-engagement i{
+    color:#333;
+    font-size: 1.6rem;
+    margin-right: 10px;
+    transition: .2s;
+}
+/***Blog Section Ends***/
+
+/***View All Section Starts***/
+.view-all{
+    width: 100vw;
+    margin: 3rem 0 5rem 0;
+    display: none;
+}
+.view-all .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view-all .container .col-1{
+    width: 25%;
+}
+.view-all .container .col-2{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.view-all .container .col-2 .btn{
+    padding: 1rem 4rem;
+    font-size: 2rem;
+}
+/***View All Section Ends***/
+/***Footer Section Starts***/
+.footer{
+    width: 100vw;
+    background-color: #222;
+}
+.footer .container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.footer .container .col-1{
+    border-bottom: 1px solid #666;
+    padding: 3rem;
+}
+.footer .container .col-1 h1{
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+    animation: transitionTop 1s linear;
+}
+.footer .container .col-2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.footer .container .col-2 nav{
+    padding: 3rem 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+    width: 100%;
+}
+.footer .container .col-2 nav a{
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    position: relative;
+    animation: fadeIn 2s linear;
+}
+.footer .container .col-2 nav a::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    background-color: #fff;
+    bottom:-5px;left: 0;
+}
+.footer .container .col-2 nav a::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    background-color: #fff;
+    bottom:-5px;right: 0;
+}
+.footer .container .col-2 nav a:hover::after{
+    width: 100%;
+}
+.footer .container .col-2 nav a:hover::before{
+    width: 100%;
+}
+/***Footer Section Ends***/
+
+/***********************************************
+***********Index Page CSS Ends******************
+************************************************/
+
+
+
+/***********************************************
+*********Upcoming Matches CSS Starts************
+************************************************/
+.uc-match {
+
+}
+.uc-match .game-box{
+    animation: transitionTop 1s linear;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 50px;
+}
+.uc-match .game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+}
+.uc-match .game .vs{
+    margin: 0px 15px;
+}
+.uc-match .game-content{
+    padding: 20px 0;
+}
+.uc-match .game-content h2{
+    align-items: center;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.uc-match .game-content p{
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+/***********************************************
+*********Upcoming Matches CSS Ends**************
+************************************************/
+
+
+/***Desktop Query Starts***/
+@media (max-width: 1200px) {
+    html{
+        font-size: 53%;
+    }
+    .header .container .row .col-2 img{
+        height: 48rem;
+    }
+}
+/***Desktop Query Ends***/
+
+/***Tablet Query Starts***/
+
+@media only screen and (max-width: 991px) {
+    html{
+        font-size: 50%;
+    }
+    .blog .container .row{
+        flex-direction: column;
+    }
+    .blog .container .row .col-1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .blog .container .row .col-1 nav{
+        flex-direction: row;
+        background-color: transparent;
+        gap:30px;
+        border: none;
+    }
+    .blog .container .row .col-2{
+        width: 100%;
+        padding-left: 0;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+    .header .container .row .col-2 img{
+        height: 45rem;
+    }
+    .blog .container .row .col-2 .blog-box{
+        margin-left: 0;
+    }
+    .view-all{
+        display: block;
+    }
+    .view-all .container .col-1{
+        display: none
+    }
+    .view-all .container .col-2{
+        width: 100%;
+    }
+    .footer .container .col-2 nav a{
+        width: 25%;
+    }
+}
+/***Tablet Query Ends***/
+
+
+
+/***Mobile Query Starts***/
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+    .header .container{
+        padding: 0 5rem;
+    }
+    .header .container .row{
+        flex-direction: column;
+    }
+    .header .container .row .col-1{
+        width: 100%;
+        padding: 5rem 0;
+    }
+    .blog .container .row .col-1 nav{
+        flex-direction: column;
+        padding: 1rem 0rem;
+    }
+    .blog .container .row .col-1 nav .nav-box{
+        width: 100%;
+        display: block;
+    }
+    .blog .container .row .col-1 nav .active{
+        width: 100%;
+        display: block;
+    }
+    
+    .header .container .row .col-1 h1{
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .header .container .row .col-1 p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .btn-watch{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 25rem;
+    }
+
+    .header .container .row .col-2 img{
+        height: 30rem;
+    }
+    .view-all{
+        display: none;
+    }
+
+    .footer .container .col-2 nav{
+        padding: 3rem 3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:30px;
+        width: 100%;
+    }
+    .footer .container .col-2 nav a{
+        width: 100%;
+    }
+}
+/***Mobile Query Ends***/
+
+
+/***Keyframe Animation Starts***/
+@keyframes transitionLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    50%{
+        
+        transform: translateX(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes transitionRight{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    50%{
+        
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes transitionTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    50%{
+        
+        transform: translateY(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+       ;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/***Keyframe Animation Ends***/
